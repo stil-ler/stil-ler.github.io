@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  height: 100vh;
+}
+
+.bg1 {
+  background: red;
+  height: 100vh;
+}
+
+.bg2 {
+  background: green;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.b1 {
+  background: darkmagenta;
+  padding: 5%;
+  align-self: center;
+}
+
+.b2 {
+  background: darkslategray;
+  padding: 5%;
+  margin: 0px;
+}
+.b3 {
+  background: gold;
+  padding: 5%;
+}
