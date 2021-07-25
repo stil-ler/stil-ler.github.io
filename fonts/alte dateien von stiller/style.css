@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.hero {
+  background: url(/img/Hintergrund2.png);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero2 {
+  background: url(/img/Schwarzer\ hintergrund.png);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.falter {
+  position: absolute;
+  height: 30%;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 42%);
+  z-index: 3;
+  cursor: pointer;
+}
+.rahmen {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 2;
+}
+.gradient1 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.button {
+}
