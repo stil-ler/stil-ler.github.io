@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+@font-face {
+  src: url(fonts/Halva-qZY3r.otf);
+  font-family: halva;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.alles-container {
+  height: 300vh;
+  width: 100vw;
+  max-width: 100%;
+  background-color: rgb(8, 8, 8);
+  scroll-behavior: smooth;
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+  overflow: hidden;
+}
+.fotocontainer1 {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  padding: 2vh;
+  padding-top: 20vh;
+}
+.fotocontainer2 {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  padding: 2vh;
+}
+.fotocontainer3 {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  padding: 2vh;
+}
+.foto1 {
+  height: 40vh;
+}
+@media (max-width: 700px) {
+  .foto1 {
+    height: 30vh;
+  }
+}
+
+.fotoschrift1 {
+  font-size: 80%;
+  font-family: halva;
+  font-weight: lighter;
+  letter-spacing: 0.1vw;
+  color: rgb(255, 255, 255);
+  padding: 3vh;
+}
+.foto2 {
+  height: 40vh;
+}
+@media (max-width: 700px) {
+  .foto2 {
+    height: 30vh;
+  }
+}
+.fotoschrift2 {
+  font-size: 80%;
+  font-family: halva;
+  font-weight: lighter;
+  letter-spacing: 0.1vw;
+  color: rgb(255, 255, 255);
+  padding: 3vh;
+}
+.foto3 {
+  height: 40vh;
+}
+@media (max-width: 700px) {
+  .foto3 {
+    height: 30vh;
+  }
+}
+.fotoschrift3 {
+  font-size: 80%;
+  font-family: halva;
+  font-weight: lighter;
+  letter-spacing: 0.1vw;
+  color: rgb(255, 255, 255);
+  padding: 3vh;
+}
+.nav-container {
+  position: fixed;
+  top: 0vh;
+  width: 100vw;
+  height: 10vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  background-color: rgb(10, 12, 15);
+  border-bottom: aliceblue;
+  border-style: solid;
+  border-color: rgb(41, 41, 41);
+}
+.nav-symbol {
+  width: 3vw;
+  height: 3vh;
+  min-height: 1vh;
+  min-width: 5vh;
+  background: url(/svg/Navsymbol.svg);
+  background-repeat: no-repeat;
+  z-index: 3;
+  cursor: pointer;
+  filter: drop-shadow(0 0 0px rgb(255, 255, 255));
+  transition: ease-in 0.3s;
+}
+.nav-symbol:hover {
+  filter: drop-shadow(0 0 20px rgb(255, 255, 255));
+}

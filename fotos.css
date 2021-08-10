@@ -54,7 +54,7 @@ html {
   background-image: url("/img2/Gradient\ gerade.png");
   background-repeat: no-repeat;
   position: absolute;
-  height: 100vh;
+  height: 25vh;
   width: 100vw;
   z-index: 2;
   display: flex;
@@ -64,8 +64,9 @@ html {
 
 .footer-container {
   position: absolute;
-  height: 100vh;
+  height: 25vh;
   width: 100vw;
+  top: 75vh;
 
   max-width: 100%;
   display: flex;
@@ -74,6 +75,7 @@ html {
 
   justify-content: center;
   align-items: flex-end;
+  z-index: 3;
 }
 .kontakt {
   z-index: 100;
@@ -160,7 +162,7 @@ html {
   height: 3vh;
   min-height: 1vh;
   min-width: 3vh;
-
+  background: url(/svg/Navsymbol.svg);
   z-index: 3;
   cursor: pointer;
   filter: drop-shadow(0 0 0px rgb(255, 255, 255));
@@ -169,6 +171,7 @@ html {
 .nav-symbol:hover {
   filter: drop-shadow(0 0 20px rgb(255, 255, 255));
 }
+
 .fotorahmen-container {
   height: 25vh;
   width: 100vw;
@@ -181,6 +184,7 @@ html {
 
   overflow: hidden;
 }
+
 .fotorahmen-container2 {
   height: 25vh;
   width: 100vw;
@@ -194,33 +198,153 @@ html {
   overflow: hidden;
 }
 .foto1 {
+  position: relative;
   width: 15vw;
+  height: 17vh;
   margin: 1vw;
+  border: white;
+  border-style: solid;
+  border-width: 1px;
   z-index: 3;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.foto1:hover .fototext {
+  visibility: visible;
+  filter: drop-shadow(0 0 20px rgb(255, 255, 255));
+}
+.foto1:active .fototext {
+  filter: drop-shadow(0 0 20px rgb(255, 255, 255));
+}
+
+.fototext {
+  font-size: 80%;
+  font-family: halva;
+  font-weight: lighter;
+  letter-spacing: 0.1vw;
+  color: rgb(255, 255, 255);
+  z-index: 100;
+  visibility: hidden;
+  filter: drop-shadow(0 0 0px rgb(255, 255, 255));
+  transition: ease-in 0.3s;
+  text-decoration: none;
+  text-align: center;
+  padding: 100% 2% 100% 2%;
 }
 .foto2 {
+  position: relative;
   width: 15vw;
+  height: 17vh;
   margin: 1vw;
+  border: white;
+  border-style: solid;
+  border-width: 1px;
   z-index: 3;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.foto2:hover .fototext2 {
+  visibility: visible;
+  filter: drop-shadow(0 0 20px rgb(255, 255, 255));
+}
+.fototext2 {
+  font-size: 80%;
+  font-family: halva;
+  font-weight: lighter;
+  letter-spacing: 0.1vw;
+  color: rgb(255, 255, 255);
+  z-index: 100;
+  visibility: hidden;
+  filter: drop-shadow(0 0 0px rgb(255, 255, 255));
+  transition: ease-in 0.3s;
 }
 .foto3 {
+  position: relative;
   width: 15vw;
+  height: 17vh;
   margin: 1vw;
+  border: white;
+  border-style: solid;
+  border-width: 1px;
   z-index: 3;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+.foto3:hover .fototext3 {
+  visibility: visible;
+  filter: drop-shadow(0 0 20px rgb(255, 255, 255));
+}
+.fototext3 {
+  font-size: 80%;
+  font-family: halva;
+  font-weight: lighter;
+  letter-spacing: 0.1vw;
+  color: rgb(255, 255, 255);
+  z-index: 100;
+  visibility: hidden;
+  filter: drop-shadow(0 0 0px rgb(255, 255, 255));
+  transition: ease-in 0.3s;
 }
 .foto4 {
+  position: relative;
   width: 15vw;
+  height: 17vh;
   margin: 1vw;
+  border: white;
+  border-style: solid;
+  border-width: 1px;
   z-index: 3;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+.foto4:hover .fototext4 {
+  visibility: visible;
+  filter: drop-shadow(0 0 20px rgb(255, 255, 255));
+}
+.fototext4 {
+  font-size: 80%;
+  font-family: halva;
+  font-weight: lighter;
+  letter-spacing: 0.1vw;
+  color: rgb(255, 255, 255);
+  z-index: 100;
+  visibility: hidden;
+  filter: drop-shadow(0 0 0px rgb(255, 255, 255));
+  transition: ease-in 0.3s;
 }
 @media (max-width: 1050px) {
   .foto1 {
     width: 30vw;
+    overflow: hidden;
   }
 }
 @media (max-width: 700px) {
   .foto1 {
     width: 40vw;
+  }
+  .fototext {
+    visibility: visible;
+    font-size: 60%;
+    background-color: rgba(88, 88, 88, 0.555);
   }
 }
 @media (max-width: 1050px) {
@@ -264,4 +388,21 @@ html {
 
   margin-top: 15vh;
   z-index: 3;
+}
+
+.schwammerln {
+  position: absolute;
+  height: 100%;
+}
+.schwammerln2 {
+  position: absolute;
+  height: 100%;
+}
+.schwammerln3 {
+  position: absolute;
+  height: 100%;
+}
+.schwammerln4 {
+  position: absolute;
+  height: 100%;
 }
